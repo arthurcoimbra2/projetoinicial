@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="hamburger-menu">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <div class="menu-items">
+            <label for="menu-toggle" class="menu-close-btn">&times;</label> 
+            
+            <h2>Menu</h2>
+            <a href="home.html">Início (Menu Principal)</a>
+            <a href="cadastro-usuario.html">Cadastro de Usuários</a>
+            <a href="cadastro-produto.html">Cadastro de Produto</a>
+            <a href="cadastro-fornecedor.html">Cadastro de Fornecedor</a>
+            <a href="movimentacao.html">Movimentação de Estoque</a>
+            <a href="index.html">Login/Consultar Estoque</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Cadastro de Usuário</h1>
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome do Usuário</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="nascimento">Data de Nascimento</label>
+                <input type="date" id="nascimento" name="nascimento" required>
+            </div>
+            <div class="form-group">
+                <label for="login">Login</label>
+                <input type="text" id="login" name="login" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <div class="form-group">
+                <label for="setor">Setor</label>
+                <input type="text" id="setor" name="setor" required>
+            </div>
+            <div class="form-botoes">
+                <button type="submit" class="btn">Salvar Usuário</button>
+                <a href="index.html" class="btn btn-voltar">Voltar</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

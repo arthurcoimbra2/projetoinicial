@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimentação de Estoque</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="hamburger-menu">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <div class="menu-items">
+            <label for="menu-toggle" class="menu-close-btn">&times;</label> 
+            
+            <h2>Menu</h2>
+            <a href="home.html">Início (Menu Principal)</a>
+            <a href="cadastro-usuario.html">Cadastro de Usuários</a>
+            <a href="cadastro-produto.html">Cadastro de Produto</a>
+            <a href="cadastro-fornecedor.html">Cadastro de Fornecedor</a>
+            <a href="movimentacao.html">Movimentação de Estoque</a>
+            <a href="index.html">Login/Consultar Estoque</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Movimentação de Estoque</h1>
+        <form>
+            <div class="form-group">
+                <label for="tipo-movimentacao">Tipo de Movimentação</label>
+                <select id="tipo-movimentacao" name="tipo-movimentacao" required>
+                    <option value="entrada">Entrada</option>
+                    <option value="saida">Saída</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="produto">Produto</label>
+                <select id="produto" name="produto" required>
+                    <option value="" disabled selected>Selecione um produto</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                <label for="quantidade">Quantidade</label>
+                <input type="number" id="quantidade" name="quantidade" required min="1">
+            </div>
+            <div class="form-group">
+                <label for="data">Data</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+            <div class="form-group">
+                <label for="motivo">Motivo</label>
+                <textarea id="motivo" name="motivo" rows="4"></textarea>
+            </div>
+            <div class="form-botoes">
+                <button type="submit" class="btn">Registrar Movimentação</button>
+                <a href="home.html" class="btn btn-voltar">Voltar</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Controle de Estoque</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="hamburger-menu">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <div class="menu-items">
+            <label for="menu-toggle" class="menu-close-btn">&times;</label> 
+            
+            <h2>Menu</h2>
+            <a href="home.html">Início (Menu Principal)</a>
+            <a href="cadastro-usuario.html">Cadastro de Usuários</a>
+            <a href="cadastro-produto.html">Cadastro de Produto</a>
+            <a href="cadastro-fornecedor.html">Cadastro de Fornecedor</a>
+            <a href="movimentacao.html">Movimentação de Estoque</a>
+            <a href="index.html">Login/Consultar Estoque</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Login</h1>
+        <form>
+            <div class="form-group">
+                <label for="login">Login</label>
+                <input type="text" id="login" name="login" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <button type="submit" class="btn">Entrar</button>
+        </form>
+        <div class="link-cadastro">
+            <p>Não tem cadastro? <a href="cadastro-usuario.html">Cadastre-se</a></p>
+        </div>
+    </div>
+</body>
+</html>

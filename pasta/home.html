@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="hamburger-menu">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <div class="menu-items">
+            <label for="menu-toggle" class="menu-close-btn">&times;</label> 
+            
+            <h2>Menu</h2>
+            <a href="home.html">Início (Dashboard)</a>
+            <a href="cadastro-usuario.html">Cadastro de Usuários</a>
+            <a href="cadastro-produto.html">Cadastro de Produto</a>
+            <a href="cadastro-fornecedor.html">Cadastro de Fornecedor</a>
+            <a href="movimentacao.html">Movimentação de Estoque</a>
+            <a href="index.html">Login/Consultar Estoque</a>
+        </div>
+    </nav>
+    <div class="container dashboard-container">
+        <div class="welcome-section">
+            <h1>Olá</h1>
+        </div>
+
+        <h2>Acesso Rápido</h2>
+        
+        <div class="menu-grid">
+            <a href="movimentacao.html" class="grid-btn main-action">
+                <span class="grid-icon">&#x21C6;</span>
+                Movimentação de Estoque
+                <small>Registrar Entradas/Saídas</small>
+            </a>
+            <a href="cadastro-produto.html" class="grid-btn">
+                <span class="grid-icon">&#x1F4E6;</span>
+                Cadastro de Produto
+            </a>
+            <a href="cadastro-fornecedor.html" class="grid-btn">
+                <span class="grid-icon">&#x1F3E2;</span>
+                Cadastro de Fornecedor
+            </a>
+            <a href="cadastro-usuario.html" class="grid-btn">
+                <span class="grid-icon">&#x1F464;</span>
+                Cadastro de Usuários
+            </a>
+            <a href="index.html" class="grid-btn">
+                <span class="grid-icon">&#x1F4CA;</span>
+                Consultar Estoque
+            </a>
+        </div>
+    </div>
+</body>
+</html>
